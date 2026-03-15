@@ -1,0 +1,53 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" modified="2026-03-14T22:07:58.507Z" version="22.1.22" etag="3vVeMT5iOd0FrFDXLwa7" type="embed">
+  <diagram name="Страница-1" id="57zvkctMlYw1Avix_V0C">
+    <mxGraphModel dx="1648" dy="1094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IRS8dDLMNxNJ1xWd1WsR-27" target="IRS8dDLMNxNJ1xWd1WsR-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-45" value="Оплата медицинских услуг" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IRS8dDLMNxNJ1xWd1WsR-25" connectable="0" vertex="1">
+          <mxGeometry x="-0.1137" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-27" value="Пациент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IRS8dDLMNxNJ1xWd1WsR-31" target="IRS8dDLMNxNJ1xWd1WsR-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="70" />
+              <mxPoint x="370" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-31" value="Кассир" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-32" value="D1&amp;nbsp; &amp;nbsp; 1С: Бухгалтерия предприятия" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="677.5" y="55" width="342.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IRS8dDLMNxNJ1xWd1WsR-35" target="IRS8dDLMNxNJ1xWd1WsR-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-35" value="&#xa;&#xa;P1&#xa;передача платежных&#xa;данных в ККМ" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="460" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IRS8dDLMNxNJ1xWd1WsR-46" target="IRS8dDLMNxNJ1xWd1WsR-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-46" value="Бухгалтер" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="190" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="IRS8dDLMNxNJ1xWd1WsR-47" target="IRS8dDLMNxNJ1xWd1WsR-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRS8dDLMNxNJ1xWd1WsR-47" value="&#xa;P2&#xa;Процессинг платежей" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="460" y="190" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

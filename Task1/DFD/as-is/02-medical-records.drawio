@@ -1,0 +1,59 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" modified="2026-03-14T22:07:34.029Z" version="22.1.22" etag="PpwvEt84xGdy0BjzoFlU" type="embed">
+  <diagram name="Страница-1" id="H3UJMQNb4lLSQI6EjLaJ">
+    <mxGraphModel dx="1648" dy="1094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-yqxPODM9GoeHug2DD32-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-yqxPODM9GoeHug2DD32-8" target="-yqxPODM9GoeHug2DD32-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="70" />
+              <mxPoint x="100" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-8" value="Администратор&lt;br&gt;(ресепшен)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-10" value="D2&amp;nbsp; &amp;nbsp; &amp;nbsp;Excel-file с анализами" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="398" y="275" width="342" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-yqxPODM9GoeHug2DD32-14" target="-yqxPODM9GoeHug2DD32-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-14" value="&#xa;&#xa;P1&#xa;регистрация файла&#xa;с данными пациента" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="180" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-15" value="D1&amp;nbsp; &amp;nbsp; Data-file (Excel/PDF/PNG/etc.) с данными пациента" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="398" y="55" width="342" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-18" value="&#xa;P3&#xa;просмотр анализов" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="180" y="260" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-yqxPODM9GoeHug2DD32-20" target="-yqxPODM9GoeHug2DD32-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-yqxPODM9GoeHug2DD32-20" target="-yqxPODM9GoeHug2DD32-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-20" value="Врач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-yqxPODM9GoeHug2DD32-18" target="-yqxPODM9GoeHug2DD32-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="559.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-yqxPODM9GoeHug2DD32-26" target="-yqxPODM9GoeHug2DD32-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-yqxPODM9GoeHug2DD32-26" value="&#xa;&#xa;P2&#xa;просмотр медицинских &#xa;данных пациента" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="180" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

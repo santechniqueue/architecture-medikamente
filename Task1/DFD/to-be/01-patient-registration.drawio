@@ -1,0 +1,126 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" modified="2026-03-14T22:43:25.682Z" etag="nqZN9nUMpmpab3YzzHmu" version="22.1.22" type="embed">
+  <diagram name="Страница-1" id="tobe-01-patient-reg">
+    <mxGraphModel dx="3166" dy="1094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a1" value="Пациент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-1560" y="100" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="Администратор&lt;br&gt;(ресепшен)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-1270" y="100" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="Врач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-1270" y="510" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="&#xa;&#xa;P1&#xa;регистрация пациента в системе&#xa;[Consent Check] [RBAC]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1090" y="40" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="&#xa;&#xa;P2&#xa;регистрация файла с данными пациента&#xa;[Audit] [RBAC]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1090" y="190" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="&#xa;&#xa;P3&#xa;запись пациента к специалисту&#xa;[RBAC] [Audit]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1090" y="350" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="&#xa;&#xa;P4&#xa;просмотр и редактирование записей&#xa;[ABAC: лечащий врач] [Audit]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=default;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1090" y="510" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" value="D1&amp;nbsp; &amp;nbsp; CRM БД (PostgreSQL) [Encryption at Rest, RBAC, CONFIDENTIAL]" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="-630" y="50" width="590" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="D2&amp;nbsp; &amp;nbsp; Защищённое хранилище мед. данных (PostgreSQL + S3) [Encryption at Rest, Audit, CONFIDENTIAL]" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="-630" y="200" width="590" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="D3&amp;nbsp; &amp;nbsp; Сервис записей (PostgreSQL) [Encryption at Rest, RBAC, Audit, CONFIDENTIAL]" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" parent="1" vertex="1">
+          <mxGeometry x="-630" y="360" width="590" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a1" target="a2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_label" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Передаёт: ФИО, дата рождения,&lt;br&gt;телефон, email, адрес,&lt;br&gt;место работы/учёбы,&lt;br&gt;хронические заболевания&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e1" connectable="0" vertex="1">
+          <mxGeometry x="-0.1" y="-40" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1_sec" value="&lt;font color=&quot;#CC0000&quot; style=&quot;font-size: 8px;&quot;&gt;[PII]&lt;/font&gt; &lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[TLS 1.3]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e1" connectable="0" vertex="1">
+          <mxGeometry x="-0.1" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a2" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1150" y="130" />
+              <mxPoint x="-1150" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_sec" value="&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[TLS 1.3][IAM][Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e2" connectable="0" vertex="1">
+          <mxGeometry x="0.2" y="-10" relative="1" as="geometry">
+            <mxPoint x="-50" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a2" target="p2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1150" y="130" />
+              <mxPoint x="-1150" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a2" target="p3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1150" y="130" />
+              <mxPoint x="-1150" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="p1" target="d1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_sec" value="&lt;font color=&quot;#CC0000&quot; style=&quot;font-size: 8px;&quot;&gt;[PII: ФИО, ДР, телефон, email]&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[Encryption] [Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e5" connectable="0" vertex="1">
+          <mxGeometry x="-0.1" y="-20" relative="1" as="geometry">
+            <mxPoint x="11" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="p2" target="d2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_sec" value="&lt;font color=&quot;#CC0000&quot; style=&quot;font-size: 8px;&quot;&gt;[PII, Legal]&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[Encryption] [Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e6" connectable="0" vertex="1">
+          <mxGeometry x="-0.1" y="-20" relative="1" as="geometry">
+            <mxPoint x="11" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="p3" target="d3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_sec" value="&lt;font color=&quot;#CC0000&quot; style=&quot;font-size: 8px;&quot;&gt;[PII]&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[Encryption] [Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e7" connectable="0" vertex="1">
+          <mxGeometry x="-0.1" y="-20" relative="1" as="geometry">
+            <mxPoint x="11" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a3" target="p4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_sec" value="&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[TLS 1.3][IAM][Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e8" connectable="0" vertex="1">
+          <mxGeometry x="-0.2" y="-10" relative="1" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="p4" target="d3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-335" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9_sec" value="&lt;font color=&quot;#009900&quot; style=&quot;font-size: 8px;&quot;&gt;[ABAC] [Audit]&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="e9" connectable="0" vertex="1">
+          <mxGeometry x="0.3" y="15" relative="1" as="geometry">
+            <mxPoint x="-315" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
